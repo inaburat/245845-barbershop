@@ -28,7 +28,57 @@
         </nav>
         <div class="user-block">
           <a class="login" href="#">Вход</a>
-        </div>          
+        </div>
+        <main class="container">
+          <section class="second-nav">
+            <h1>Средства для ухода</h1>
+            <nav class="second-navigation">
+              <ul>
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+                <li>
+                  <a href="#">Магазин</a>
+                </li>
+                <li>
+                  <a href="#">Средства для ухода</a>
+                </li>
+              </ul>
+            </nav>
+          </section>
+          <div class="producers">
+            <form action="/echo" method="post">
+              <fieldset>
+                <legend>Производители</legend>
+                <input name="company" type="radio" value="baxter" multiple checked><p>Baxter of California</p>
+                <input name="company" type="radio" value="natty" multiple><p>Mr Natty</p>
+                <input name="company" type="radio" value="suavecito" multiple checked><p>Suavecito</p>
+                <input name="company" type="radio" value="malin-goetz" multiple><p>Malin+Goetz</p>
+                <input name="company" type="radio" value="murrays" multiple><p>Murray's</p>
+                <input name="company" type="radio" value="ac" multiple checked><p>American crew</p>
+              </fieldset>
+          </div>
+        </main>
+        <footer class="main-footer">
+          <div class="container">
+            <section class="footer-contacts">
+              Барбершоп «Бородинский»<br>
+              Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+              <a href="#">Как нас найти?</a><br>
+              Телефон: +7 (812) 666-02-66
+            </section>
+            <section class="footer-social">
+              <p>Давайте дружить!</p>
+              <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+              <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+              <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+            </section>
+            <section class="footer-copyright">
+              <p>Разработано:</p>
+              <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+            </section>
+          </div>
+        </footer>
       </div>
     </header>
   </body>
