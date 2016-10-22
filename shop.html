@@ -26,12 +26,14 @@
             </li>
           </ul>
         </nav>
-        <div class="user-block">
+      </div>
+      <div class="user-block">
           <a class="login" href="#">Вход</a>
-        </div>
-        <main class="container">
-          <section class="second-nav">
-            <h1>Средства для ухода</h1>
+      </div>
+      </header>
+      <main>
+        <section class="second-nav">
+          <h1>Средства для ухода</h1>
             <nav class="second-navigation">
               <ul>
                 <li>
@@ -50,13 +52,87 @@
             <form action="/echo" method="post">
               <fieldset>
                 <legend>Производители</legend>
-                <input name="company" type="radio" value="baxter" multiple checked><p>Baxter of California</p>
-                <input name="company" type="radio" value="natty" multiple><p>Mr Natty</p>
-                <input name="company" type="radio" value="suavecito" multiple checked><p>Suavecito</p>
-                <input name="company" type="radio" value="malin-goetz" multiple><p>Malin+Goetz</p>
-                <input name="company" type="radio" value="murrays" multiple><p>Murray's</p>
-                <input name="company" type="radio" value="ac" multiple checked><p>American crew</p>
+                  <ul>
+                    <li><p><input name="company" type="checkbox" checked>Baxter of California</p></li>
+                    <li><p><input name="company" type="checkbox" >Mr Natty</p></li>
+                    <li><p><input name="company" type="checkbox" checked>Suavecito</p></li>
+                    <li><p><input name="company" type="checkbox">Malin+Goetz</p></li>
+                    <li><p><input name="company" type="checkbox">Murray's</p></li>
+                    <li><p><input name="company" type="checkbox" checked>American crew</p></li>
+                  </ul>
               </fieldset>
+            </form>
+          </div>
+          <div class="groups">
+            <form action="/echo" method="post">
+              <fieldset>
+                <legend>Группы товаров</legend>
+                  <p><input type="radio" name="grp" value="shave">Бритвенные принадлежности</p>
+                  <p><input type="radio" name="grp" value="facilities" checked>Средства для ухода</p>
+                  <p><input type="radio" name="grp" value="accessories">Аксессуары</p>
+              </fieldset>
+            </form>
+          </div>
+          <a class="show-me-btn" href="#">ПОКАЗАТЬ</a>
+          <article>
+              <img alt="Коробка с бутылочками" src="http://placehold.it/150x100">
+              <h4>Набор для путешествий <br>
+                  "BAXTER OF CALIFORNIA"</h4>
+              <div class="price-and-btn">
+                <p>2 900 РУБ.</p>
+                <a class="buy-now" href="#">КУПИТЬ</a>
+              </div>
+          </article>
+          <article>
+              <img alt="Тюбик с пшиколкой" src="http://placehold.it/150x100">
+              <h4>Увлажняющий кондиционер <br>
+                  "BAXTER OF CALIFORNIA"</h4>
+              <div class="price-and-btn">
+                <p>750 РУБ.</p>
+                <a class="buy-now" href="#">КУПИТЬ</a>
+              </div>
+          </article>
+          <article>
+              <img alt="Фото геля" src="http://placehold.it/150x100">
+              <h4>Гель для волос<br>
+                  "SUAVECITO"</h4>
+              <div class="price-and-btn">
+                <p>290 РУБ.</p>
+                <a class="buy-now" href="#">КУПИТЬ</a>
+              </div>
+          </article>
+          <article>
+            <img alt="Фото глины" src="http://placehold.it/150x100">
+            <h4>Глина для укладки волос<br>
+                "AMERICAN CREW"</h4>
+            <div class="price-and-btn">
+              <p>500 РУБ.</p>
+              <a class="buy-now" href="#">КУПИТЬ</a>
+            </div>
+          </article>
+          <article>
+            <img alt="Фото геля" src="http://placehold.it/150x100">
+            <h4>Гель для волос<br>
+                "AMERICAN CREW"</h4>
+            <div class="price-and-btn">
+              <p>300 РУБ.</p>
+              <a class="buy-now" href="#">КУПИТЬ</a>
+            </div>
+          </article>
+          <article>
+            <img alt="Фото набора" src="http://placehold.it/150x100">
+            <h4>Набор для бритья<br>
+                "BAXTER OF CALIFORNIA"</h4>
+            <div class="price-and-btn">
+              <p>3 900 РУБ.</p>
+              <a class="buy-now" href="#">КУПИТЬ</a>
+            </div>
+          </article>
+          <div class="pages-of-shop">
+            <a class="btn" href="#">1</a>
+            <a class="btn" href="#">2</a>
+            <a class="btn" href="#">3</a>
+            <a class="btn" href="#">4</a>
           </div>
         </main>
         <footer class="main-footer">
@@ -78,8 +154,6 @@
               <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
             </section>
           </div>
-        </footer>
-      </div>
-    </header>
+      </footer>
   </body>
 </html>
