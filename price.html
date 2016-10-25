@@ -20,6 +20,16 @@
       <div class="user-block">
           <a class="login" href="#">Вход</a>
       </div>
+      <form class="hiden-form" action="/echo" method="post">
+        <h3>Личный кабинет</h3>
+        <label for="form-login form-passwod">Введите пожалуйста свой логин и пароль</label>
+        <ul>
+          <li><input type="text" name="name" id="form-login" placeholder="Логин"></li>
+          <li><input type="password" name="password" id="form-password" placeholder="Пароль"></li>
+          <li><input name="remember-me" type="checkbox" checked>Запомните меня<a href="#">Я забыл пароль!</a></li>
+          <button type="submit" class="enter">Войти</button>
+        </ul>
+      </form>
     </header>
     <main class="container">
       <h2>Прайс-лист</h2>
@@ -33,26 +43,24 @@
         <h1>Истинно мужская классика</h1>
       </div>
       <div class="price-block-left">
-        <header>
-          <h3>Мы используем только<br>
+          <h3>Мы используем только
               лучшие средства</h3>
           <ul>
-            <li>BAXTER OF CALIFORNIA</li>
-            <li>MR NATTY</li>
-            <li>SUAVECITO</li>
-            <li>MALIN+GOETZ</li>
+            <li>Baxter of California</li>
+            <li>Mr Natty</li>
+            <li>Suavecito</li>
+            <li>Malin+Goetz</li>
           </ul>
-        </header>
-        <section>
+        <div class="about-us">
           <h3>Несколько слов о нас:</h3>
-          Наша парикмахерская занимается исключительно мужскими
-          стрижками. Стрижка каждого клиента для нас - это уникальная
-          и продуманная до мелочей работа. Мы не работаем на
-          колчиство, мы делаем качество.
-        </section>
+          <p>Наша парикмахерская занимается исключительно мужскими
+             стрижками. Стрижка каждого клиента для нас - это уникальная
+             и продуманная до мелочей работа. Мы не работаем на
+             колчиство, мы делаем качество.
+          </p>
+        </div>
       </div>
       <div class="price-block-right">
-        <header>
           <h3>Цены на услуги мастеров</h3>
           <table>
             <tr>
@@ -68,13 +76,13 @@
               <td>350 Р.</td>
             </tr>
           </table>
-        </header>
-        <section>
-          Наша мастерская расположена в центре города, поэтому
-          сделать стильную стрижку можно в любое время, даже в
-          обеденный перерыв. Здесь вы можете погрузиться в удобную
-          для вас атмосферу, чувствовать себя комфортно и свобоно!
-        </section>
+        <div class="about-factory">
+          <p>Наша мастерская расположена в центре города, поэтому
+             сделать стильную стрижку можно в любое время, даже в
+             обеденный перерыв. Здесь вы можете погрузиться в удобную
+             для вас атмосферу, чувствовать себя комфортно и свобоно!
+          </p>
+        </div>
       </div>
     </main>
     <footer class="main-footer">

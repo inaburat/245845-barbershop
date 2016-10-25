@@ -20,6 +20,16 @@
       <div class="user-block">
         <a class="login" href="#">Вход</a>
       </div>
+      <form class="hiden-form" action="/echo" method="post">
+        <h3>Личный кабинет</h3>
+        <label for="form-login form-passwod">Введите пожалуйста свой логин и пароль</label>
+        <ul>
+          <li><input type="text" name="name" id="form-login" placeholder="Логин"></li>
+          <li><input type="password" name="password" id="form-password" placeholder="Пароль"></li>
+          <li><input name="remember-me" type="checkbox" checked>Запомните меня<a href="#">Я забыл пароль!</a></li>
+          <button type="submit" class="enter">Войти</button>
+        </ul>
+      </form>
     </header>
     <main class="container">
       <div class="index-logo">
@@ -80,6 +90,9 @@
           </p>
           <a class="btn" href="#">Как проехать</a>
           <a class="btn" href="#">Обратная связь</a>
+        </div>
+        <div class="hiden-map">
+          <a href="#"><img alt="Карта" src="http://placehold.it/400x300">
         </div>
         <div class="index-content-right">
           <h2 class="index-content-title">Записаться</h2>
