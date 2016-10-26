@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Барбершоп «Бородинский»</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <nav class="main-navigation">
+          <ul>
+            <li><a href="index.html"><img alt="logo" src="img/logo.png" width="111" height="24"></a></li>
+            <li><a href="#">Информация</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Прайс-лист</a></li>
+            <li><a href="#">Магазин</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="user-block">
+        <a class="login" href="#">Вход</a>
+      </div>
+      <form class="hiden-form" action="/echo" method="post">
+        <h3>Личный кабинет</h3>
+        <p>Введите пожалуйста свой логин и пароль</p>
+        <ul>
+          <li><input type="text" name="name" id="form-login" placeholder="Логин"></li>
+          <li><input type="password" name="password" id="form-password" placeholder="Пароль"></li>
+          <li><input name="remember-me" type="checkbox" checked>Запомните меня<a href="#">Я забыл пароль!</a></li>
+          <button type="submit" class="enter">Войти</button>
+          <button type="button" class="close">X</button>
+        </ul>
+      </form>
+    </header>
+    <main class="container">
+      <h2>Средства для ухода</h2>
+      <div class="breadcrumbs">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a>Средства для ухода</a></li>
+        </ul>
+      </div>
+      <div class="producers">
+        <form action="/echo" method="post">
+          <fieldset>
+            <legend>Производители</legend>
+            <ul>
+              <li><input name="company" type="checkbox" id="baxter" checked><label for="baxter">Baxter of California</label></li>
+              <li><input name="company" type="checkbox" id="mrnatty"><label for="mrnatty">Mr Natty</label></li>
+              <li><input name="company" type="checkbox" id="suavecito" checked><label for="suavecito">Suavecito</label></li>
+              <li><input name="company" type="checkbox" id="malin+goetz"><label for="malin+goetz">Malin+Goetz</label></li>
+              <li><input name="company" type="checkbox" id="murray"><label for="murray">Murray's</label></li>
+              <li><input name="company" type="checkbox" id="american-crew" checked><label for="americancrew">American crew</label></li>
+            </ul>
+          </fieldset>
+          <fieldset>
+            <legend>Группы товаров</legend>
+            <ul>
+              <li><input type="radio" name="grp" value="shave">Бритвенные принадлежности</li>
+              <li><input type="radio" name="grp" value="facilities" checked>Средства для ухода</li>
+              <li><input type="radio" name="grp" value="accessories">Аксессуары</li>
+            </ul>
+          </fieldset>
+          <button type="submit" class="show-me-btn">ПОКАЗАТЬ</button>
+        </form>
+      </div>
+      <article>
+        <img alt="Фото набора" src="img/set.jpg" width="220" height="165">
+        <h4>Набор для путешествий <br>
+            "Baxter of California"</h4>
+        <div class="price-and-btn">
+          <span>2 900 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <article>
+        <img alt="Фото продукта" src="img/conditioner.jpg" width="220" height="165">
+        <h4>Увлажняющий кондиционер <br>
+            "Baxter of California"</h4>
+        <div class="price-and-btn">
+          <span>750 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <article>
+        <img alt="Фото геля" src="img/gel.jpg" width="220" height="165">
+        <h4>Гель для волос<br>
+            "Suavecito"</h4>
+        <div class="price-and-btn">
+          <span>290 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <article>
+        <img alt="Фото глины" src="img/clay.jpg" width="220" height="165">
+        <h4>Глина для укладки волос<br>
+            "American crew"</h4>
+        <div class="price-and-btn">
+          <span>500 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <article>
+        <img alt="Фото геля" src="img/gel-crew.jpg" width="220" height="165">
+        <h4>Гель для волос<br>
+            "American crew"</h4>
+        <div class="price-and-btn">
+          <span>300 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <article>
+        <img alt="Фото набора" src="img/set2.jpg" width="220" height="165">
+        <h4>Набор для бритья<br>
+            "Baxter of California"</h4>
+        <div class="price-and-btn">
+          <span>3 900 руб.</span>
+          <a class="buy-now" href="#">Купить</a>
+        </div>
+      </article>
+      <div class="pages-of-shop">
+        <a class="btn" href="#">1</a>
+        <a class="btn">2</a>
+        <a class="btn" href="#">3</a>
+        <a class="btn" href="#">4</a>
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container">
+        <section class="footer-contacts">
+          Барбершоп «Бородинский»<br>
+          Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
+          <a href="#">Как нас найти?</a><br>
+          Телефон: +7 (812) 666-02-66
+        </section>
+        <section class="footer-social">
+          <p>Давайте дружить!</p>
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </section>
+        <section class="footer-copyright">
+          <p>Разработано:</p>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+        </section>
+      </div>
+    </footer>
+  </body>
+</html>
