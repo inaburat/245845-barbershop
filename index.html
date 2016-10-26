@@ -21,21 +21,21 @@
       <div class="user-block">
         <a class="login" href="#">Вход</a>
       </div>
-      <form class="hiden-form" action="/echo" method="post">
-        <h3>Личный кабинет</h3>
+      <form class="hidden-form" action="/echo" method="post">
+        <b>Личный кабинет</b>
         <p>Введите пожалуйста свой логин и пароль</p>
         <ul>
-          <li><input type="text" name="name" id="form-login" placeholder="Логин"></li>
-          <li><input type="password" name="password" id="form-password" placeholder="Пароль"></li>
-          <li><input name="remember-me" type="checkbox" checked>Запомните меня<a href="#">Я забыл пароль!</a></li>
-          <button type="submit" class="enter">Войти</button>
-          <button type="button" class="close">X</button>
+          <li><input type="text" name="name" placeholder="Логин"></li>
+          <li><input type="password" name="password" placeholder="Пароль"></li>
+          <li><input name="remember-me" type="checkbox" id="remember-me" checked><label for="remember-me">Запомните меня</label><a href="#">Я забыл пароль!</a></li>
         </ul>
+        <button type="submit" class="enter">Войти</button>
+        <button type="button" class="close">X</button>
       </form>
     </header>
     <main class="container">
       <div class="index-logo">
-        <img src="img/BORODINSKI Logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
+        <img src="img/logo.png" width="368" height="204" alt="Барбершоп «Бородинский»">
       </div>
       <section class="features">
         <div class="features-item">
@@ -93,7 +93,7 @@
           <a class="btn" href="#">Как проехать</a>
           <a class="btn" href="#">Обратная связь</a>
         </div>
-        <div class="hiden-map">
+        <div class="hidden-map">
           <img alt="Карта" src="img/map.png" width="874" height="668">
           <button type="button" class="close">X</button>
         </div>
