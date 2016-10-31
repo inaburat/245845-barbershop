@@ -21,3 +21,221 @@ h2 {
   color: #000000;
   font-weight: bold;
 }
+
+.container {
+  width: 940px;
+  padding: 0 10px;
+  margin: 0 auto;
+  /*Только для офромления сетки*/
+  min-height: 70px;
+}
+
+.main-navigation {
+  width: 780px;
+  float: left;
+  /*Только для офромления сетки*/
+  min-height: 70px;
+}
+
+.user-block {
+  width: 140px;
+  float: right;
+  /*Только для офромления сетки*/
+  min-height: 70px;
+}
+
+.main-header {
+  margin-bottom: 60px;
+}
+
+.index-logo {
+  width: 368px;
+  height: 204px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 25px;
+}
+
+.features-item {
+  width: 300px;
+  float: left;
+  margin-right: 20px;
+  /*Только для офромления сетки*/
+  min-height: 167px;
+}
+
+.features-item:last-child {
+  margin-right: 0;
+}
+
+.features {
+  margin-bottom: 80px;
+}
+
+.index-content {
+  padding: 50px 80px;
+  margin-bottom: 35px;
+}
+
+.index-content-left {
+  float: left;
+  width: 380px;
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.index-content-right {
+  float: right;
+  width: 300px;
+  /* Только для оформления сетки */
+  min-height: 330px;
+}
+
+.main-footer {
+  margin-top: 65px;
+  padding-top: 60px;
+  padding-bottom: 40px;
+}
+
+.footer-contacts {
+  width: 320px;
+  margin-right: 60px;
+  float: left;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-social {
+  float: left;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+.footer-copyright {
+  float: right;
+  width: 180px;
+  /* Только для оформления сетки */
+  min-height: 90px;
+}
+
+/*Далее только вторая страница shop.html*/
+
+
+.shop-header {
+  margin-bottom: 52px;
+}
+
+.breadcrumbs {
+  margin-bottom: 58px;
+  /* Только для оформления сетки */
+  min-height: 74px;
+}
+
+.producers {
+  width: 220px;
+  margin-right: 20px;
+  float: left;
+  /* Только для оформления сетки */
+  min-height: 600px;
+}
+
+.company-selector {
+  margin-bottom: 52px;
+  /* Только для оформления сетки */
+  min-height: 260px;
+}
+
+.product-groups {
+  margin-bottom: 50px;
+}
+
+.cards {
+  float: left;
+  width: 700px;
+}
+
+.product {
+  width: 220px;
+  margin-left: 0px;
+  margin-right: 16px;
+  display: inline-block;
+  vertical-align: top;
+}
+
+article:nth-child(3n+3){
+  margin-right: 0;
+}
+
+article:nth-child(-n+3){
+  margin-bottom: 24px;
+}
+
+article:nth-child(n+4){
+  margin-bottom: 49px;
+}
+
+.pages-of-shop {
+  height: 43px;
+  width: 192px;
+  /* Только для оформления сетки */
+  background-color: green;
+}
+
+.shop-footer {
+  margin-top: 50px;
+}
+
+/*Далее только третья страница catalog-item.html*/
+
+.catalog-header {
+  margin-bottom: 51px;
+}
+
+.catalog-breadcrumbs {
+  margin-bottom: 58px;
+  /* Только для оформления сетки */
+  height: 75px;
+}
+
+.column-left {
+  float: left;
+  width: 460px;
+}
+
+.column-left img:first-child {
+  margin-bottom: 14px;
+}
+
+.column-right {
+  float: right;
+  width: 390px;
+}
+
+.baxter-photo {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.baxter-photo:last-child {
+  margin-right: 0;
+}
+
+.catalog-footer {
+  margin-top: 40px;
+}
+
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden-form {
+  display: none;
+}
+
+.hidden-map {
+  display: none;
+}
+*{outline: 1px solid green;}
