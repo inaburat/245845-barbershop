@@ -2,6 +2,7 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>Барбершоп «Бородинский»</title>
   </head>
@@ -18,21 +19,10 @@
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
+        <div class="user-block">
+            <a class="login" href="#">Вход</a>
+        </div>
       </div>
-      <div class="user-block">
-          <a class="login" href="#">Вход</a>
-      </div>
-      <form class="hidden-form" action="/echo" method="post">
-        <b>Личный кабинет</b>
-        <p>Введите пожалуйста свой логин и пароль</p>
-        <ul>
-          <li><input type="text" name="name" placeholder="Логин"></li>
-          <li><input type="password" name="password" placeholder="Пароль"></li>
-          <li><input name="remember-me" type="checkbox" id="remember-me" checked><label for="remember-me">Запомните меня</label><a href="#">Я забыл пароль!</a></li>
-        </ul>
-        <button type="submit" class="enter">Войти</button>
-        <button type="button" class="close">X</button>
-      </form>
     </header>
     <main class="container">
       <h2>Прайс-лист</h2>
@@ -45,7 +35,7 @@
       <div class="price-title">
         <h1>Истинно мужская классика</h1>
       </div>
-      <div class="price-block-left">
+      <div class="column-left">
           <h3>Мы используем только
               лучшие средства</h3>
           <ul>
@@ -63,7 +53,7 @@
           </p>
         </div>
       </div>
-      <div class="price-block-right">
+      <div class="column-right">
           <h3>Цены на услуги мастеров</h3>
           <table>
             <tr>
@@ -108,5 +98,16 @@
         </section>
       </div>
     </footer>
+    <form class="hidden-form" action="/echo" method="post">
+      <b>Личный кабинет</b>
+      <p>Введите пожалуйста свой логин и пароль</p>
+      <ul>
+        <li><input type="text" name="name" placeholder="Логин"></li>
+        <li><input type="password" name="password" placeholder="Пароль"></li>
+        <li><input name="remember-me" type="checkbox" id="remember-me" checked><label for="remember-me">Запомните меня</label><a href="#">Я забыл пароль!</a></li>
+      </ul>
+      <button type="submit" class="enter">Войти</button>
+      <button type="button" class="close">X</button>
+    </form>
   </body>
 </html>
