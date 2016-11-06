@@ -2,20 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>Барбершоп «Бородинский»</title>
   </head>
-  <body>
+  <body class="shop-body">
     <header class="catalog-header">
       <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
-            <li><a href="index.html"><img alt="logo" src="img/logo2.png" width="111" height="24"></a></li>
+            <li class="logo"><a href="index.html"><img alt="logo" src="img/logo2.png" width="111" height="24"></a></li>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Магазин</a></li>
+            <li><a class="active-navigation">Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -25,14 +26,14 @@
       </div>
     </header>
     <main class="container">
-      <div class="breadcrumbs">
-        <h2>Набор для путешествий "Baxter of California"</h2>
-        <!-- <ul> -->
-          <!-- <li><a href="#">Главная</a></li> -->
-          <!-- <li><a href="#">Магазин</a></li> -->
-          <!-- <li><a href="#">Средства для ухода</a></li> -->
-          <!-- <li><a>Набор для путешествий "Baxter of California"</a></li> -->
-        <!-- </ul> -->
+      <div class="breadcrumbs catalog-breadcrumbs">
+        <h2>Набор для путешествий «Baxter of California»</h2>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Средства для ухода</a></li>
+          <li class="active"><a>Набор для путешествий «Baxter of California»</a></li>
+        </ul>
       </div>
       <div class="clearfix">
         <div class="column-left">
@@ -45,18 +46,18 @@
           <header>
             <p>ЕСТЬ В НАЛИЧИИ <span class="article">АРТИКУЛ: DEXTER-AE</span></p>
           </header>
-          <p>Trabel kit - необходимый аксессуар во время любого
+          <p>Travel kit - необходимый аксессуар во время любого
              путешествия. В аккуратной кожаной сумке находится все, что
              нужно для бритья и ухода за кожей во время рабочей поездки
              или отдыха: средство для умывания, увлажняющий крем, крем
              для бритья, крем после бритья, шампунь. Набор также может
              стать отличным подарком.
           </p>
-          <div class="price-and-btn">
-            <span>2 900 РУБ.</span>
-            <a class="buy-now" href="#">Купить</a>
+          <div class="price-and-btn clearfix">
+            <span>2 900 руб.</span>
+            <a href="#">Купить</a>
           </div>
-          <div>
+          <div class="baxter-description">
             <p>В набор входят:</p>
             <ul>
               <li>Средство для умывания (50мл)</li>
@@ -69,8 +70,8 @@
         </div>
       </div>
     </main>
-    <footer class="catalog-footer">
-      <div class="container">
+    <footer class="shop-footer catalog-footer">
+      <div class="container clearfix">
         <section class="footer-contacts">
             Барбершоп «Бородинский»<br>
             Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>

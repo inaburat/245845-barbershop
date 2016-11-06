@@ -2,20 +2,21 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link href="css/style.css" rel="stylesheet">
     <title>Барбершоп «Бородинский»</title>
   </head>
-  <body>
+  <body class="shop-body">
     <header class="shop-header">
       <div class="container clearfix">
         <nav class="main-navigation">
           <ul>
-            <li><a href="index.html"><img alt="logo" src="img/logo2.png" width="111" height="24"></a></li>
+            <li class="logo"><a href="index.html"><img alt="logo" src="img/logo2.png" width="111" height="24"></a></li>
             <li><a href="#">Информация</a></li>
             <li><a href="#">Новости</a></li>
             <li><a href="#">Прайс-лист</a></li>
-            <li><a>Магазин</a></li>
+            <li class="active-navigation"><a>Магазин</a></li>
             <li><a href="#">Контакты</a></li>
           </ul>
         </nav>
@@ -27,11 +28,11 @@
     <main class="container clearfix">
       <div class="breadcrumbs">
         <h2>Средства для ухода</h2>
-        <!-- <ul> -->
-          <!-- <li><a href="#">Главная</a></li> -->
-          <!-- <li><a href="#">Магазин</a></li> -->
-          <!-- <li><a>Средства для ухода</a></li> -->
-        <!-- </ul> -->
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li class="active"><a>Средства для ухода</a></li>
+        </ul>
       </div>
       <div class="producers">
         <form action="/echo" method="post">
@@ -60,65 +61,63 @@
       <div class="cards">
         <article class="product">
           <img alt="Фото набора" src="img/shop-set.jpg" width="220" height="165">
-          <h4>Набор для путешествий <br>
-              "Baxter of California"</h4>
-          <div class="price-and-btn">
+          <p>Набор для путешествий<br>
+             <span>«Baxter of California»</span></p>
+          <div class="price-and-btn clearfix">
             <span>2 900 руб.</span>
-            <a class="buy-now" href="#">Купить</a>
+            <a href="#">Купить</a>
           </div>
         </article>
         <article class="product">
           <img alt="Фото продукта" src="img/shop-con.jpg" width="220" height="165">
-          <h4>Увлажняющий кондиционер <br>
-              "Baxter of California"</h4>
-          <div class="price-and-btn">
+          <p>Увлажняющий кондиционер <br>
+             <span>«Baxter of California»</span></p>
+          <div class="price-and-btn clearfix">
             <span>750 руб.</span>
-            <a class="buy-now" href="#">Купить</a>
+            <a href="#">Купить</a>
           </div>
         </article>
         <article class="product">
           <img alt="Фото геля" src="img/shop-gel.jpg" width="220" height="165">
-          <h4>Гель для волос<br>
-              "Suavecito"</h4>
-          <div class="price-and-btn">
+          <p>Гель для волос<br>
+             <span>«Suavecito»</span></p>
+          <div class="price-and-btn clearfix">
             <span>290 руб.</span>
-            <a class="buy-now" href="#">Купить</a>
+            <a href="#">Купить</a>
           </div>
         </article>
         <article class="product">
           <img alt="Фото глины" src="img/shop-clay.jpg" width="220" height="165">
-          <h4>Глина для укладки волос<br>
-              "American crew"</h4>
-          <div class="price-and-btn">
+          <p>Глина для укладки волос<br>
+             <span>«American crew»</span></p>
+          <div class="price-and-btn clearfix">
             <span>500 руб.</span>
-            <a class="buy-now" href="#">Купить</a>
+            <a href="#">Купить</a>
           </div>
         </article>
         <article class="product">
           <img alt="Фото геля" src="img/shop-gel-crew.jpg" width="220" height="165">
-          <h4>Гель для волос<br>
-              "American crew"</h4>
-          <div class="price-and-btn">
+          <p>Гель для волос<br>
+             <span>«American crew»</span></p>
+          <div class="price-and-btn clearfix">
             <span>300 руб.</span>
-            <a class="buy-now" href="#">Купить</a>
+            <a href="#">Купить</a>
           </div>
         </article>
         <article class="product">
           <img alt="Фото набора" src="img/shop-set2.jpg" width="220" height="165">
-          <h4>Набор для бритья<br>
-              "Baxter of California"</h4>
-          <div class="price-and-btn">
+          <p>Набор для бритья<br>
+             <span>«Baxter of California»</span></p>
+          <div class="price-and-btn clearfix">
             <span>3 900 руб.</span>
             <a class="buy-now" href="#">Купить</a>
           </div>
         </article>
-        <div class="clearfix after-shop">
-        </div>
-        <div class="pages-of-shop">
-          <a class="btn" href="#">1</a>
-          <a class="btn">2</a>
-          <a class="btn" href="#">3</a>
-          <a class="btn" href="#">4</a>
+        <div>
+          <a class="pagination" href="#">1</a>
+          <a class="pagination active-page">2</a>
+          <a class="pagination" href="#">3</a>
+          <a class="pagination" href="#">4</a>
         </div>
       </div>
     </main>
