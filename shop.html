@@ -37,30 +37,78 @@
       <div class="producers">
         <form action="/echo" method="post">
           <fieldset class="company-selector">
-            <legend>Производители</legend>
+            <legend>Производители:</legend>
             <ul>
-              <li><input name="company" type="checkbox" id="baxter" checked><label for="baxter">Baxter of California</label></li>
-              <li><input name="company" type="checkbox" id="mrnatty"><label for="mrnatty">Mr Natty</label></li>
-              <li><input name="company" type="checkbox" id="suavecito" checked><label for="suavecito">Suavecito</label></li>
-              <li><input name="company" type="checkbox" id="malin+goetz"><label for="malin+goetz">Malin+Goetz</label></li>
-              <li><input name="company" type="checkbox" id="murray"><label for="murray">Murray's</label></li>
-              <li><input name="company" type="checkbox" id="american-crew" checked><label for="american-crew">American crew</label></li>
+              <li>
+                <label class="shop-checkbox" for="baxter">
+                  <input name="company" type="checkbox" id="baxter" checked>
+                  <span class="shop-indicator"></span>
+                  Baxter of California
+                </label>
+              </li>
+              <li>
+                <label class="shop-checkbox" for="mrnatty">
+                  <input name="company" type="checkbox" id="mrnatty">
+                  <span class="shop-indicator"></span>
+                  Mr Natty
+                </label>
+              </li>
+              <li>
+                <label class="shop-checkbox" for="suavecito">
+                  <input name="company" type="checkbox" id="suavecito" checked>
+                  <span class="shop-indicator"></span>
+                  Suavecito
+                </label>
+              </li>
+              <li>
+                <label class="shop-checkbox" for="malin+goetz">
+                  <input name="company" type="checkbox" id="malin+goetz">
+                  <span class="shop-indicator"></span>
+                  Malin+Goetz
+                </label>
+              </li>
+              <li>
+                <label class="shop-checkbox" for="murray">
+                  <input name="company" type="checkbox" id="murray">
+                  <span class="shop-indicator"></span>
+                  Murray's
+                </label>
+              </li>
+              <li>
+                <label class="shop-checkbox" for="american-crew">
+                  <input name="company" type="checkbox" id="american-crew" checked>
+                  <span class="shop-indicator"></span>
+                  American crew
+                </label>
+              </li>
             </ul>
           </fieldset>
           <fieldset class="product-groups">
-            <legend>Группы товаров</legend>
+            <legend>Группы товаров:</legend>
             <ul>
-              <li><input type="radio" name="grp" value="shave">Бритвенные принадлежности</li>
-              <li><input type="radio" name="grp" value="facilities" checked>Средства для ухода</li>
-              <li><input type="radio" name="grp" value="accessories">Аксессуары</li>
+              <li>
+                <input type="radio" name="grp" id="btn-1" value="shave">
+                <label class="shop-radio" for="btn-1"></label>
+                Бритвенные принадлежности
+              </li>
+              <li>
+                <input type="radio" name="grp" id="btn-2" value="facilities" checked>
+                <label class="shop-radio" for="btn-2"></label>
+                Средства для ухода
+              </li>
+              <li>
+                <input type="radio" name="grp" id="btn-3" value="accessories">
+                <label class="shop-radio" for=btn-3></label>
+                Аксессуары
+              </li>
             </ul>
           </fieldset>
-          <button type="submit" class="show-me-btn">ПОКАЗАТЬ</button>
+          <button class="btn" type="submit" class="show-me-btn">ПОКАЗАТЬ</button>
         </form>
       </div>
       <div class="cards">
         <article class="product">
-          <img alt="Фото набора" src="img/shop-set.jpg" width="220" height="165">
+          <a href="catalog-item.html"><img alt="Фото набора" src="img/shop-set.jpg" width="220" height="165"></a>
           <p>Набор для путешествий<br>
              <span>«Baxter of California»</span></p>
           <div class="price-and-btn clearfix">
@@ -69,7 +117,7 @@
           </div>
         </article>
         <article class="product">
-          <img alt="Фото продукта" src="img/shop-con.jpg" width="220" height="165">
+          <a href="#"><img alt="Фото продукта" src="img/shop-con.jpg" width="220" height="165"></a>
           <p>Увлажняющий кондиционер <br>
              <span>«Baxter of California»</span></p>
           <div class="price-and-btn clearfix">
@@ -78,7 +126,7 @@
           </div>
         </article>
         <article class="product">
-          <img alt="Фото геля" src="img/shop-gel.jpg" width="220" height="165">
+          <a href="#"><img alt="Фото геля" src="img/shop-gel.jpg" width="220" height="165"></a>
           <p>Гель для волос<br>
              <span>«Suavecito»</span></p>
           <div class="price-and-btn clearfix">
@@ -87,7 +135,7 @@
           </div>
         </article>
         <article class="product">
-          <img alt="Фото глины" src="img/shop-clay.jpg" width="220" height="165">
+          <a href="#"><img alt="Фото глины" src="img/shop-clay.jpg" width="220" height="165"></a>
           <p>Глина для укладки волос<br>
              <span>«American crew»</span></p>
           <div class="price-and-btn clearfix">
@@ -96,7 +144,7 @@
           </div>
         </article>
         <article class="product">
-          <img alt="Фото геля" src="img/shop-gel-crew.jpg" width="220" height="165">
+          <a href="#"><img alt="Фото геля" src="img/shop-gel-crew.jpg" width="220" height="165"></a>
           <p>Гель для волос<br>
              <span>«American crew»</span></p>
           <div class="price-and-btn clearfix">
@@ -105,7 +153,7 @@
           </div>
         </article>
         <article class="product">
-          <img alt="Фото набора" src="img/shop-set2.jpg" width="220" height="165">
+          <a href="#"><img alt="Фото набора" src="img/shop-set2.jpg" width="220" height="165"></a>
           <p>Набор для бритья<br>
              <span>«Baxter of California»</span></p>
           <div class="price-and-btn clearfix">
@@ -137,20 +185,25 @@
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy.ru</a>
         </section>
       </div>
     </footer>
-    <form class="hidden-form" action="/echo" method="post">
-      <b>Личный кабинет</b>
-      <p>Введите пожалуйста свой логин и пароль</p>
-      <ul>
-        <li><input type="text" name="name" placeholder="Логин"></li>
-        <li><input type="password" name="password" placeholder="Пароль"></li>
-        <li><input name="remember-me" type="checkbox" id="remember-me" checked><label for="remember-me">Запомните меня</label><a href="#">Я забыл пароль!</a></li>
-      </ul>
-      <button type="submit" class="enter">Войти</button>
-      <button type="button" class="close">X</button>
-    </form>
+    <div class="modal-content">
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+      <button class="modal-content-close" type="button" class="close">X</button>
+    </div>
   </body>
 </html>

@@ -31,7 +31,7 @@
         <ul>
           <li><a href="#">Главная</a></li>
           <li><a href="#">Магазин</a></li>
-          <li><a href="#">Средства для ухода</a></li>
+          <li><a href="shop.html">Средства для ухода</a></li>
           <li class="active"><a>Набор для путешествий «Baxter of California»</a></li>
         </ul>
       </div>
@@ -86,20 +86,25 @@
         </section>
         <section class="footer-copyright">
           <p>Разработано:</p>
-          <a class="btn" href="https://htmlacademy.ru">HTML Academy</a>
+          <a class="btn" href="https://htmlacademy.ru">HTML Academy.ru</a>
         </section>
       </div>
     </footer>
-    <form class="hidden-form" action="/echo" method="post">
-      <b>Личный кабинет</b>
-      <p>Введите пожалуйста свой логин и пароль</p>
-      <ul>
-        <li><input type="text" name="name" placeholder="Логин"></li>
-        <li><input type="password" name="password" placeholder="Пароль"></li>
-        <li><input name="remember-me" type="checkbox" id="remember-me" checked><label for="remember-me">Запомните меня</label><a href="#">Я забыл пароль!</a></li>
-      </ul>
-      <button type="submit" class="enter">Войти</button>
-      <button type="button" class="close">X</button>
-    </form>
+    <div class="modal-content">
+      <h2 class="modal-content-title">Личный кабинет</h2>
+      <p>Введите пожалуйста свой логин и пароль.</p>
+      <form class="login-form" action="https://echo.htmlacademy.ru" method="post">
+        <input class="icon-user" type="text" name="login" placeholder="Логин">
+        <input class="icon-password" type="password"  name="password" placeholder="Пароль">
+        <label class="login-checkbox">
+          <input type="checkbox" name="remember">
+          <span class="checkbox-indicator"></span>
+          Запомните меня
+        </label>
+        <a class="restore" href="#">Я забыл пароль!</a>
+        <button class="btn" type="submit">Войти</button>
+      </form>
+      <button class="modal-content-close" type="button" class="close">X</button>
+    </div>
   </body>
 </html>

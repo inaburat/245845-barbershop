@@ -30,7 +30,8 @@ a {
 }
 
 .main-body {
-  background: #000000 url("../img/back-index.jpg") no-repeat center top;
+  background: #000000 url("../img/back-index.jpg") no-repeat;
+  background-position: center 7px;
 }
 
 .container {
@@ -103,7 +104,7 @@ a {
   left: 18px;
   width: 18px;
   height: 18px;
-  background: #ff0000;
+  background: transparent url("../img/icon-login.png") no-repeat center;
   opacity: 0.3;
 }
 
@@ -115,12 +116,13 @@ a {
   width: 368px;
   height: 204px;
   margin: 0 auto;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .index-logo img {
   width: 368px;
   height: 204px;
+  padding-left: 6px;
 }
 
 .features-item {
@@ -133,8 +135,8 @@ a {
 .features-name {
   position: relative;
   display: block;
-  margin-bottom: 30px;
-  padding-bottom: 35px;
+  margin-bottom: 28px;
+  padding-bottom: 32px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -162,15 +164,26 @@ a {
 }
 
 .features {
-  margin-bottom: 80px;
+  margin-bottom: 78px;
 }
 
 .index-content {
-  padding: 50px 80px;
+  padding: 45px 80px;
+  padding-left: 82px;
+  padding-bottom: 50px;
   margin-bottom: 35px;
   color: #000000;
   background: url("../img/index-content-shadow.png") no-repeat center,
   #f8f5f2 url("../img/back-main.jpg");
+}
+
+.index-content h2 {
+  margin-bottom: 20px;
+}
+
+.index-content img {
+  margin-top: 2px;
+  margin-left: 1px;
 }
 
 .index-content-left {
@@ -181,6 +194,28 @@ a {
 .index-content-right {
   float: right;
   width: 300px;
+}
+
+.index-content .index-content-left p:nth-child(3) {
+  margin-bottom: 22px;
+}
+
+.index-content .index-content-left a.btn:nth-child(4) {
+  padding-left: 30px;
+  padding-right: 31px;
+}
+
+.index-content .index-content-left a.btn:nth-child(5) {
+  padding-left: 26px;
+  padding-right: 25px;
+}
+
+.index-content-right h2 {
+  margin-left: 3px;
+}
+
+.index-content .index-content-right p {
+  margin-left: 3px;
 }
 
 .index-content-title {
@@ -195,15 +230,20 @@ a {
   margin-bottom: 25px;
 }
 
+.index-content p:nth-child(2) {
+  margin-bottom: 20px;
+}
+
 .news-preview {
   margin: 0;
   padding: 0;
   padding-right: 35px;
+  margin-bottom: 29px;
   list-style: none;
 }
 
 .news-preview li {
-  margin-bottom: 25px;
+  margin-bottom: 21px;
 }
 
 .news-preview p {
@@ -231,6 +271,11 @@ a {
   background-color: #000000;
   border: none;
   cursor: pointer;
+}
+
+.btn:first-child {
+  margin-left: 2px;
+  margin-top: 8px;
 }
 
 .btn:hover,
@@ -268,7 +313,7 @@ a {
 
 .gallery .btn {
   position: absolute;
-  bottom: 0;
+  bottom: -2px;
 
   width: 140px;
   margin: 0;
@@ -280,6 +325,10 @@ a {
 
 .gallery-next {
   right: 0;
+}
+
+.appointment-form {
+  margin-top: 23px;
 }
 
 .appointment-form input {
@@ -312,7 +361,7 @@ a {
 
 .main-footer {
   margin-top: 65px;
-  padding-top: 60px;
+  padding-top: 58px;
   padding-bottom: 40px;
   color: #ffffff;
   background: #252525 url("../img/back-footer.jpg");
@@ -320,7 +369,8 @@ a {
 
 .footer-contacts {
   width: 320px;
-  margin-right: 60px;
+  margin-left: 1px;
+  margin-right: 61px;
   float: left;
 }
 
@@ -357,6 +407,18 @@ a {
     background-color 0.5s;
 }
 
+.social-btn-vk {
+  background: #000000 url("../img/icon-vk.png") no-repeat center;
+}
+
+.social-btn-fb {
+  background: #000000 url("../img/icon-f.png") no-repeat center;
+}
+
+.social-btn-inst {
+  background: #000000 url("../img/icon-inst.png") no-repeat center;
+}
+
 .social-btn:hover {
   background-color: #ffffff;
 }
@@ -372,8 +434,10 @@ a {
   text-align: center;
 }
 
-.footer-copyright .btn {
+.footer-copyright a.btn {
   margin-right: 0;
+  padding-right: 20px;
+  padding-left: 24px;
 }
 
 .footer-copyright .btn:hover {
@@ -397,15 +461,23 @@ a {
     content: "";
     position: absolute;
     bottom: 0;
-    left: 20%;
+    left: 20px;
+    right: 20px;
     display: block;
-    width: 56px;
     height: 4px;
     background-color: #ffffff;
 }
 
+.active-navigation:hover::after {
+  display: none;
+}
+
 .logo a{
   padding: 31px 20px 20px 20px;
+}
+
+.logo a:hover {
+  background-color: #000000;
 }
 
 .shop-header .login {
@@ -413,7 +485,7 @@ a {
 }
 
 .breadcrumbs {
-  margin-bottom: 51px;
+  margin-bottom: 45px;
 }
 
 .breadcrumbs h2 {
@@ -481,24 +553,129 @@ a {
   width: 220px;
   margin-right: 20px;
   float: left;
-  /* Только для оформления сетки */
-  min-height: 600px;
+}
+
+.producers fieldset {
+  border: none;
+  padding: 0;
+}
+
+.producers legend {
+  font-size: 24px;
+  line-height: 30px;
+  margin-left: -2px;
+  margin-bottom: 26px;
+}
+
+.producers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.producers li {
+  margin-bottom: 13px;
+}
+
+.producers .btn {
+  padding-right: 25px;
+}
+
+.company-selector .shop-checkbox {
+  position: relative;
+  padding-left: 41px;
+  cursor: pointer;
 }
 
 .company-selector {
-  margin-bottom: 52px;
-  /* Только для оформления сетки */
-  min-height: 260px;
+  margin-bottom: 34px;
+}
+
+.company-selector input[type="checkbox"] {
+  display: none;
+}
+
+.company-selector .shop-checkbox:hover {
+  color: #663d15;
+}
+
+.shop-checkbox input[type=checkbox] + .shop-indicator {
+  position: absolute;
+  top: -1px;
+  left: -2px;
+  width: 16px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+
+.shop-checkbox input[type=checkbox]:checked + .shop-indicator::before,
+.shop-checkbox input[type=checkbox]:checked + .shop-indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 0;
+  width: 16px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.shop-checkbox input[type=checkbox]:checked + .shop-indicator::before {
+  transform: rotate(45deg);
+}
+
+.shop-checkbox input[type=checkbox]:checked + .shop-indicator::after {
+  transform: rotate(-45deg);
 }
 
 .product-groups {
-  margin-bottom: 50px;
+  margin-bottom: 32px;
+}
+
+.product-groups legend {
+  margin-bottom: 28px;
+}
+
+.product-groups input[type="radio"] {
+  display: none;
+}
+
+.product-groups li {
+  line-height: 19px;
+  margin-bottom: 18px;
+  position: relative;
+  padding-left: 41px;
+  cursor: pointer;
+}
+
+
+.product-groups li:hover {
+  color: #663d15;
+}
+
+.product-groups label {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  top: -1px;
+  left: -2px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#btn-1:checked ~ label[for="btn-1"],
+#btn-2:checked ~ label[for="btn-2"],
+#btn-3:checked ~ label[for="btn-3"] {
+  background-color: #000000;
+  box-shadow: inset 0 0 0 4px #ffffff;
 }
 
 .cards {
   float: left;
   width: 700px;
   font-size: 0;
+  margin-top: 6px;
 }
 
 .product {
@@ -753,12 +930,190 @@ article:nth-child(n+4){
   clear: both;
 }
 
-.hidden-form {
+
+/*Всплывающая форма*/
+
+.modal-content {
+  display: none;
+  position: absolute;
+  top: 128px;
+  left: 50%;
+  width: 300px;
+  margin-left: -230px;
+  padding: 45px 80px 48px 80px;
+  color: #000000;
+  background: #f8f3f0 url("img/back-main.jpg");
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-content-close {
+  position: absolute;
+  top: 8px;
+  right: -36px;
+  width: 24px;
+  height: 24px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: -1px;
+  width: 25px;
+  height: 5px;
+  background-color: #d0d0d0;
+  border-radius: 1px;
+}
+
+.modal-content-close::before {
+  transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+  transform: rotate(-45deg);
+}
+
+.modal-content h2 {
+  margin: 0;
+  margin-bottom: 15px;
+  margin-left: 2px;
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.modal-content p {
+  margin: 0;
+  margin-left: 2px;
+  margin-bottom: 12px;
+}
+
+.modal-content .login-form {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.login-form input[type="text"],
+.login-form input[type="password"] {
+  width: 241px;
+  margin: 0;
+  margin-bottom: 10px;
+  padding: 7px 15px;
+  padding-right: 40px;
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: bold;
+  font-family: "PT Sans Narrow", "Arial", sans-serif;
+  color: #000000;
+  text-transform: uppercase;
+  background-color: #f9f6f3;
+  border: 2px solid #000000;
+}
+
+.login-form input[type="password"] {
+  margin-bottom: 13px;
+}
+
+.login-form input:focus {
+  border-color: #663d15;
+}
+
+.login-form input.icon-user {
+  background-image: url("../img/icon-user.png");
+  background-repeat: no-repeat;
+  background-position: 268px 13px;
+}
+
+.login-form input.icon-password {
+  background-image: url("../img/icon-locked.png");
+  background-repeat: no-repeat;
+  background-position: 268px 9px;
+}
+
+.login-form .restore {
+  float: right;
+  color: #000000;
+}
+
+.login-form .btn {
+  width: 100%;
+  padding-left: 25px;
+  padding-top: 9px;
+  margin-top: 15px;
+}
+
+.login-checkbox input[type="checkbox"] {
   display: none;
 }
 
-.hidden-map {
+.login-checkbox {
+  position: relative;
+  padding-left: 32px;
+  cursor: pointer;
+}
+
+.login-checkbox:hover {
+  color: #663d15;
+}
+
+.login-checkbox input[type="checkbox"] + .checkbox-indicator {
+  position: absolute;
+  top: -1px;
+  left: 0;
+  width: 17px;
+  height: 16px;
+  border: 2px solid #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before,
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  content: "";
+  position: absolute;
+  top: 7px;
+  left: 1px;
+  width: 15px;
+  height: 2px;
+  background-color: #000000;
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::before {
+  transform: rotate(45deg);
+}
+
+.login-checkbox input[type="checkbox"]:checked + .checkbox-indicator::after {
+  transform: rotate(-45deg);
+}
+
+/*Карта*/
+
+.modal-content-map {
   display: none;
+  position: fixed;
+  z-index: 20;
+  top: 50%;
+  left: 50%;
+  margin-top: -280px;
+  margin-left: -390px;
+  width: 766px;
+  height: 561px;
+  background: #e9e5dc url("../img/map.png") no-repeat;
+  border: 7px solid white;
+  box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
 }
 
 /**{outline: 1px solid green;}*/
