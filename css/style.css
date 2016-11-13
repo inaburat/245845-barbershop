@@ -25,9 +25,6 @@ h2 {
   font-weight: 700;
 }
 
-a {
-  cursor: pointer;
-}
 
 .main-body {
   background: #000000 url("../img/back-index.jpg") no-repeat;
@@ -457,6 +454,10 @@ a {
   background-color: #000000;
 }
 
+.active-navigation {
+  cursor: pointer;
+}
+
 .active-navigation::after {
     content: "";
     position: absolute;
@@ -642,17 +643,20 @@ a {
 .product-groups li {
   line-height: 19px;
   margin-bottom: 18px;
-  position: relative;
-  padding-left: 41px;
-  cursor: pointer;
 }
-
 
 .product-groups li:hover {
   color: #663d15;
 }
 
 .product-groups label {
+  position: relative;
+  display: block;
+  padding-left: 41px;
+  cursor: pointer;
+}
+
+.product-groups label:before {
   content: "";
   position: absolute;
   width: 16px;
@@ -664,9 +668,7 @@ a {
   cursor: pointer;
 }
 
-#btn-1:checked ~ label[for="btn-1"],
-#btn-2:checked ~ label[for="btn-2"],
-#btn-3:checked ~ label[for="btn-3"] {
+.product-groups input:checked ~ label:before {
   background-color: #000000;
   box-shadow: inset 0 0 0 4px #ffffff;
 }
@@ -703,6 +705,10 @@ a {
   line-height: 18px;
   color: #000000;
   text-transform: uppercase;
+}
+
+.product a {
+  text-decoration: none;
 }
 
 .price-and-btn {
@@ -773,6 +779,11 @@ article:nth-child(n+4){
 }
 
 .active-page {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.active-page:hover {
   color: #000000;
   background-color: #ffffff;
 }
