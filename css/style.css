@@ -25,7 +25,6 @@ h2 {
   font-weight: 700;
 }
 
-
 .main-body {
   background: #000000 url("../img/back-index.jpg") no-repeat;
   background-position: center 7px;
@@ -44,8 +43,8 @@ h2 {
 }
 
 .main-navigation {
-  width: 780px;
   float: left;
+  width: 780px;
 }
 
 .main-navigation ul {
@@ -57,10 +56,10 @@ h2 {
 
 .main-navigation li {
   position: relative;
-  font-size: 16px;
-  line-height: 20px;
   display: inline-block;
   vertical-align: top;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .main-navigation a {
@@ -75,8 +74,8 @@ h2 {
 }
 
 .user-block {
-  max-width: 140px;
   float: right;
+  max-width: 140px;
 }
 
 .login {
@@ -124,8 +123,8 @@ h2 {
 }
 
 .features-item {
-  width: 300px;
   float: left;
+  width: 300px;
   margin-right: 20px;
   text-align: center;
 }
@@ -133,8 +132,8 @@ h2 {
 .features-name {
   position: relative;
   display: block;
-  margin-bottom: 28px;
   padding-bottom: 32px;
+  margin-bottom: 28px;
   font-size: 30px;
   line-height: 42px;
 }
@@ -233,8 +232,8 @@ h2 {
 }
 
 .news-preview {
-  margin: 0;
   padding: 0;
+  margin: 0;
   padding-right: 35px;
   margin-bottom: 29px;
   list-style: none;
@@ -254,9 +253,10 @@ h2 {
 
 .btn {
   display: inline-block;
-  margin-right: 16px;
-  padding: 10px 33px;
   vertical-align: top;
+  padding: 10px 33px;
+  margin-right: 16px;
+  border: none;
   text-align: center;
   font-weight: 700;
   font-size: 14px;
@@ -265,9 +265,7 @@ h2 {
   color: #ffffff;
   text-transform: uppercase;
   text-decoration: none;
-  color: #ffffff;
   background-color: #000000;
-  border: none;
   cursor: pointer;
 }
 
@@ -312,7 +310,6 @@ h2 {
 .gallery .btn {
   position: absolute;
   bottom: -2px;
-
   width: 140px;
   margin: 0;
 }
@@ -332,9 +329,9 @@ h2 {
 .appointment-form input {
   float: left;
   width: 106px;
+  padding: 7px 15px;
   margin-right: 20px;
   margin-bottom: 20px;
-  padding: 7px 15px;
   font-size: 14px;
   line-height: 24px;
   font-family: "PT Sans Narrow", "Arial", sans-serif;
@@ -371,10 +368,10 @@ h2 {
 }
 
 .footer-contacts {
+  float: left;
   width: 320px;
   margin-left: 1px;
   margin-right: 61px;
-  float: left;
 }
 
 .footer-contacts a {
@@ -398,12 +395,12 @@ h2 {
 
 .social-btn {
   display: inline-block;
+  vertical-align: top;
   width: 43px;
   height: 43px;
   margin: 0 2px;
   background: #000000 url("../img/sprite.png") no-repeat;
   font-size: 0;
-  vertical-align: top;
   text-decoration: none;
   transition:
    background-position 0.5s,
@@ -569,9 +566,9 @@ h2 {
 }
 
 .producers {
+  float: left;
   width: 220px;
   margin-right: 20px;
-  float: left;
 }
 
 .producers fieldset {
@@ -663,8 +660,8 @@ h2 {
 }
 
 .product-groups li {
-  line-height: 19px;
   margin-bottom: 18px;
+  line-height: 19px;
 }
 
 .product-groups li:hover {
@@ -703,23 +700,23 @@ h2 {
 }
 
 .product {
+  display: inline-block;
+  vertical-align: top;
   width: 220px;
   margin-left: 0px;
   margin-right: 20px;
-  display: inline-block;
-  vertical-align: top;
   background: #ffffff;
   box-shadow: -1px -1px 30px -11px #000101;
 }
 
 .product p {
-    font-size: 14px;
-    line-height: 18px;
-    color: #000000;
-    text-transform: none;
-    padding: 0 16px;
-    margin-top: 1px;
-    margin-left: 1px;
+  margin-top: 1px;
+  margin-left: 1px;
+  padding: 0 16px;
+  font-size: 14px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: none;
 }
 
 .product span {
@@ -745,6 +742,7 @@ h2 {
 .price-and-btn a{
   display: block;
   float: right;
+  width: 42px;
   padding: 9px 17px 10px 19px;
   color: #ffffff;
   text-decoration: none;
@@ -875,6 +873,7 @@ article:nth-child(n+4){
 
 .baxter-photo {
   display: inline-block;
+  vertical-align: top;
   margin-right: 18px;
   box-shadow: -1px -1px 30px -11px #000101;
 }
@@ -894,8 +893,8 @@ article:nth-child(n+4){
 }
 
 .article {
-  width: 140px;
   float: right;
+  width: 140px;
   text-align: right;
   padding-right: 13px;
   color: #aeaeae;
@@ -907,6 +906,7 @@ article:nth-child(n+4){
 
 .column-right .price-and-btn {
   float: left;
+  width: 187px;
   margin-top: 22px;
   margin-bottom: 38px;
 }
@@ -918,12 +918,13 @@ article:nth-child(n+4){
 
 .baxter-description {
   float: left;
+  width: 390px;
 }
 
 .baxter-description p {
+  margin-left: 0;
   font-size: 24px;
   line-height: 30px;
-  margin-left: 0;
 }
 
 .baxter-description ul {
@@ -1071,6 +1072,7 @@ article:nth-child(n+4){
 
 .login-form .restore {
   float: right;
+  min-width: 95px;
   color: #000000;
 }
 
